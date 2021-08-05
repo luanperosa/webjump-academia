@@ -1,0 +1,62 @@
+//
+//  Common
+//  _____________________________________________
+& when (@media-common = true) {
+    .todo-index-index {
+        .form-container {
+            margin: 0 20px 20px 20px;
+            display: flex;
+            margin-bottom: 10px;
+            .task-input-field {
+                max-width: 80%;
+                border-radius: 2px;
+            }
+            .actions-toolbar {
+                margin-left: 5px;
+                .primary .action {
+                    margin: 0;
+                }
+            }
+        }
+        ul.tasks {
+            padding: 1.8rem;
+
+            li {
+                display: flex;
+
+                .label {
+                    margin-top: 2px;
+                    margin-left: 10px;
+                    min-width: 80%;
+                }
+
+                .status {
+                    display: inline-flex;
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+
+                    &:hover {
+                        border: 2px solid #82cc78;
+                        background: #82cc78;
+                    }
+
+                    &.open {
+                        border: 2px solid #ccc;
+                    }
+
+                    &.complete {
+                        border: 2px solid #82cc78;
+                        background: #82cc78;
+                    }
+                }
+
+                .action {
+                    &.delete {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
